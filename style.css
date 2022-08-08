@@ -97,7 +97,6 @@ html {
 
 @media screen and (max-width: 600px) {
     #container {
-        background-color: aliceblue;
         width: 90%;
         min-width: 350px;
     }
