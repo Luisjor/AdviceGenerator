@@ -22,37 +22,42 @@ html {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    width: 575px;
+    width: 600px;
 
 }
 
 #AdviceElements {
-    display: grid;
-    grid-template-rows: 1fr 5fr 1fr 1fr;
-    justify-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-items: space-between;
     align-items: center;
     background-color: var(--Dark-Grayish-Blue);
     border-radius: 15px;
     margin: auto;
     padding: 1rem;
     height: 400px;
+    width: 100%;
     box-sizing: border-box;
+
 }
 
 .AdviceID {
     color: var(--Neon-Green);
     font-size: .5rem;
     text-align: center;
-    margin: 1rem;
     font-weight: 400;
     letter-spacing: 4px;
 
 }
 
 .AdviceText {
+    display: flex;
+    align-items: center;
     color: var(--Light-Cyan);
     text-align: center;
     word-wrap: break-word;
+    flex-grow: 4;
+    margin: .5rem;
 
 }
 
@@ -73,8 +78,7 @@ html {
 }
 
 .ImgDivid {
-    position: relative;
-    top: 50%;
+
 }
 
 .ImgDividDesktop {
@@ -96,7 +100,7 @@ html {
 
 @media screen and (max-width: 600px) {
     #container {
-        width: 90%;
+        width: 90vw;
         min-width: 350px;
     }
     .ImgDividDesktop {
@@ -105,6 +109,10 @@ html {
     .ImgDividMobile {
         visibility: visible;
     }
-    
+    #AdviceElements {
+        width: 90vw;
+        margin: none;
+        min-width: 300px;
+    }
     
 }
